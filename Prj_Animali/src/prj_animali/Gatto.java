@@ -8,6 +8,33 @@ package prj_animali;
  *
  * @author coppolag
  */
-public class Gatto {
-    
+public class Gatto extends Animale {
+    private String razza;
+
+    public Gatto(String nome, int eta, String razza) {
+        super(nome, eta);
+        this.razza = razza;
+    }
+
+    public String getRazza() {
+        return razza;
+    }
+
+    @Override
+    public String verso() {
+        return "Miao";
+    }
+
+    @Override
+    public String descrizione() {
+        return "Gatto: " + getNome() +
+               ", Età: " + getEta() +
+               ", Razza: " + razza +
+               ", Verso: " + verso();
+    }
+
+    // Metodo specifico
+    public void faiLeFusa() {
+        System.out.println(getNome() + " fa le fusa 😺");
+    }
 }
