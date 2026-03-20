@@ -13,13 +13,13 @@ package prj_animali;
     private String nome;
     private int eta;
 
-    // Costruttore
+   
     public Animale(String nome, int eta) {
         this.nome = nome;
         this.eta = eta;
     }
 
-    // Getter
+   
     public String getNome() {
         return nome;
     }
@@ -28,11 +28,11 @@ package prj_animali;
         return eta;
     }
 
-    // Metodi astratti
+   
     public abstract String verso();
     public abstract String descrizione();
 
-    // Metodo concreto
+    
     @Override
     public String toString() {
         return descrizione();

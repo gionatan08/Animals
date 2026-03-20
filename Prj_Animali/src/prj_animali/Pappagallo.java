@@ -10,11 +10,11 @@ package prj_animali;
  */
 public class Pappagallo extends Animale {
     private boolean parla;
-
+    
     public Pappagallo(String nome, int eta, boolean parla) {
         super(nome, eta);
         this.parla = parla;
-    }
+}
 
     public boolean isParla() {
         return parla;

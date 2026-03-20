@@ -35,6 +35,6 @@ public class Gatto extends Animale {
 
     // Metodo specifico
     public void faiLeFusa() {
-        System.out.println(getNome() + " fa le fusa 😺");
+        System.out.println(getNome() + " fa le fusa ");
     }
 }

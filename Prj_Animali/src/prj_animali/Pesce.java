@@ -35,6 +35,6 @@ public class Pesce extends Animale {
 
     // Metodo specifico
     public void nuota() {
-        System.out.println(getNome() + " sta nuotando 🐟");
+        System.out.println(getNome() + " sta nuotando");
     }
 }

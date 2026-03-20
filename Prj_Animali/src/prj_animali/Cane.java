@@ -35,6 +35,6 @@ public class Cane extends Animale {
 
     // Metodo specifico
     public void scodinzola() {
-        System.out.println(getNome() + " scodinzola felicemente 🐕");
+        System.out.println(getNome() + " scodinzola felicemente ");
     }
 }
