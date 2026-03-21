@@ -30,14 +30,23 @@ public class Main {
         System.out.println(a3.verso());
         System.out.println(a4.verso());
 
-        System.out.println(a1);
-        System.out.println(a2);
-        System.out.println(a3);
-        System.out.println(a4);
+//        System.out.println(a1);
+//        System.out.println(a2);
+//        System.out.println(a3);
+//        System.out.println(a4);
 
-        cane.scodinzola();
-        gatto.faiLeFusa();
-        pappagallo.ripetiFrase("Ciao!");
-        pesce.nuota();
+//        cane.scodinzola();
+//        gatto.faiLeFusa();
+//        pappagallo.ripetiFrase("Ciao!");
+//        pesce.nuota();
+        
+       
+        GestioneNegozio gn = new GestioneNegozio();
+        gn.aggiungiAnimale(a1);
+        gn.aggiungiAnimale(a2);
+        gn.aggiungiAnimale(a3);
+        gn.aggiungiAnimale(a4);
+        
+        gn.stampaAnimali();
     }
 }

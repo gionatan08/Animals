@@ -11,6 +11,7 @@ package prj_animali;
 import java.util.ArrayList;
 
 public class GestioneNegozio {
+
     private ArrayList<Animale> animali;
 
     public GestioneNegozio() {
@@ -22,13 +23,13 @@ public class GestioneNegozio {
     }
 
     public void rimuoviAnimale(String nome) {
-    for (int i = 0; i < animali.size(); i++) {
-        if (animali.get(i).getNome().equals(nome)) {
-            animali.remove(i);
-            break; 
+        for (int i = 0; i < animali.size(); i++) {
+            if (animali.get(i).getNome().equals(nome)) {
+                animali.remove(i);
+                break;
+            }
         }
     }
-}
 
     public Animale cercaPerNome(String nome) {
         for (Animale a : animali) {
@@ -42,6 +43,18 @@ public class GestioneNegozio {
     public void stampaAnimali() {
         for (Animale a : animali) {
             System.out.println(a);
+            if (a instanceof Cane) {
+                ((Cane) a).scodinzola();
+            }
+            if (a instanceof Gatto) {
+                ((Gatto) a).faiLeFusa();
+            }
+            if (a instanceof Pesce) {
+                ((Pesce) a).nuota();
+            }
+            if (a instanceof Pappagallo) {
+                ((Pappagallo) a).ripetiFrase("Ciao");
+            }
         }
     }
 
